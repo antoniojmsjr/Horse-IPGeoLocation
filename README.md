@@ -21,3 +21,7 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ```
 ..\Horse-IPGeoLocation\Source
 ```
+## Uso
+```delphi
+uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
+```
