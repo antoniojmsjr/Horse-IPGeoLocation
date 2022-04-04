@@ -14,9 +14,27 @@
 
 A geolocalização baseada em endereços IP é uma técnica usada para estimar a localização geográfica de um dispositivo conectado à Internet usando o endereço IP do mesmo. Este mecanismo depende de que o endereço IP do dispositivo apareça em um banco de dados com sua respectiva localização, endereço postal, cidade, país, região ou coordenadas geográficas, que são alguns dos níveis de detalhe que podem ser registrados.
 
+## ⭕ Pré-requisito
+
+Para utilizar o **Horse-IPGeoLocation** é necessário a instalação do framework [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation).
+
+* Instalação Automatizada
+
+Utilizando o [**Boss**](https://github.com/HashLoad/boss) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
+
+* Instalação Manual
+
+Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao seu projeto, em *Project > Options > Delphi Compiler > Target > All Configurations > Search path*
+
+```
+..\IPGeoLocation\Source
+```
+
 ## ⚙️ Instalação Automatizada
 
-Utilizando o [**Boss**](https://github.com/HashLoad/boss) (Dependency anager for Delphi) é possível instalar a biblioteca de forma automática.
+Utilizando o [**Boss**](https://github.com/HashLoad/boss) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
+
+*Obs: Se você usa Boss (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
 
 ```
 boss install github.com/antoniojmsjr/Horse-IPGeoLocation
@@ -29,6 +47,7 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ```
 ..\Horse-IPGeoLocation\Source
 ```
+
 ## Uso
 ```delphi
 uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
