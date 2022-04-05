@@ -19,23 +19,14 @@ A geolocalização baseada em endereços IP é uma técnica usada para estimar a
 
 Para utilizar o **Horse-IPGeoLocation** é necessário a instalação do framework [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest).
 
-* Instalação Automatizada
+*Obs: Se você usa [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
 
-Utilizando o [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
-
-* Instalação Manual
-
-Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao seu projeto, em *Project > Options > Delphi Compiler > Target > All Configurations > Search path*
-
-```
-..\IPGeoLocation\Source
-```
 
 ## ⚙️ Instalação Automatizada
 
 Utilizando o [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
 
-*Obs: Se você usa Boss (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
+*Obs: Se você usa [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
 
 ```
 boss install github.com/antoniojmsjr/Horse-IPGeoLocation
