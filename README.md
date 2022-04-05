@@ -1,8 +1,9 @@
 ![Maintained YES](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square&color=important)
 ![Memory Leak Verified YES](https://img.shields.io/badge/Memory%20Leak%20Verified%3F-yes-green.svg?style=flat-square&color=important)
 ![Delphi Supported Versions](https://img.shields.io/badge/Delphi%20Supported%20Versions-Tokyo%2010.2.3%20and%20above-blue.svg?style=flat-square)
-![Stars](https://img.shields.io/github/stars/antoniojmsjr/Horse-IPGeoLocation.svg?style=flat-square) 
-![Forks](https://img.shields.io/github/forks/antoniojmsjr/Horse-IPGeoLocation.svg?style=flat-square) 
+![HorseVersion](https://img.shields.io/badge/Horse%20minimum%20version-v3.0.1-blue.svg?style=flat-square)
+![Stars](https://img.shields.io/github/stars/antoniojmsjr/Horse-IPGeoLocation.svg?style=flat-square)
+![Forks](https://img.shields.io/github/forks/antoniojmsjr/Horse-IPGeoLocation.svg?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/antoniojmsjr/Horse-IPGeoLocation.svg?style=flat-square&color=blue)
 ![Release](https://img.shields.io/github/v/release/antoniojmsjr/Horse-IPGeoLocation?label=Latest%20release&style=flat-square&color=important)
 
