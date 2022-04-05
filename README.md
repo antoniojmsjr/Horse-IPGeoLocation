@@ -69,6 +69,17 @@ else
   THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, 'APY Key'));
 ```
 
+```delphi
+function IPGeoLocation(const pProvider: TIPGeoLocationProvider;
+                       const pToken: string;
+                       const pAPIKey: Integer;
+                       const pLanguageCode: string): THorseCallback;
+```
+* `pProvider`: Identificação do provedor de IPGeolocation homologado.
+* `pAPIKey`: ApiKey gerado no site do provedor de IPGeolocation identificado no `pProvider`. [opcional]
+* `pTimeOut`: Tempo em milissegundos para finalização da requisição. [opcional]
+* `pLanguageCode`: Identificação da linguagem que será utilizada para retorno do JSON. [opcional]
+
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
 ```delphi
