@@ -55,6 +55,18 @@ Lista dos principais provedores de IPGeolocation homologados: [Visualização](h
 
 ## ⚡️ Uso
 
+#### Uso e definição do middleware
+
+```delphi
+uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
+
+//PARA TESTAR IPGeolocation LOCALMENTE
+if (DebugHook <> 0) then
+  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, 'APY Key', '8.8.8.8'))
+else
+  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, 'APY Key'));
+```
+
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
 ```delphi
@@ -81,6 +93,32 @@ THorse.Get('ipgeo/gmaps',
   procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
   const
     cURLMaps = 'https://maps.google.com/maps?q=%g,%g'; //1º: LATITUDE/2º: LONGITUDE
+  var
+    lHorseGeoLocation: THorseGeoLocation;
+    lFormatSettings: TFormatSettings;
+    lURLMaps: string;
+  begin
+    lFormatSettings:= TFormatSettings.Create('en-US');
+
+    if Req.Sessions.TryGetSession(lHorseGeoLocation) then
+    begin
+      lURLMaps := Format(cURLMaps, [lHorseGeoLocation.Latitude, lHorseGeoLocation.Longitude], lFormatSettings);
+      Res.RedirectTo(lURLMaps);
+    end
+    else
+      Res.Send(Req.RawWebRequest.RemoteAddr);
+  end);
+```
+
+#### Exemplo de visualização do mapa(Waze) gerado com o retorno da requisição do IPGeolocation.
+
+```delphi
+uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
+
+THorse.Get('ipgeo/wmaps',
+  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+  const
+    cURLMaps = 'https://waze.com/ul?ll=%g,%g&z=10'; //1º: LATITUDE/2º: LONGITUDE
   var
     lHorseGeoLocation: THorseGeoLocation;
     lFormatSettings: TFormatSettings;
