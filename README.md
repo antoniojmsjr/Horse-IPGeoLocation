@@ -53,7 +53,7 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 
 ## 🧬 Provedores IPGeolocation
 
-Lista dos principais provedores de IPGeolocation homologados: [Visualização](https://github.com/antoniojmsjr/IPGeoLocation#provedores-homologados)
+Lista dos principais provedores de IPGeolocation homologados para utilização: [Visualização](https://github.com/antoniojmsjr/IPGeoLocation#provedores-homologados)
 
 ## ⚡️ Uso
 
