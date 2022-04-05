@@ -71,3 +71,29 @@ THorse.Get('ipgeo/json',
       Res.Send(Req.RawWebRequest.RemoteAddr);
   end);
 ```
+
+#### Exemplo de visualização do mapa(Google) gerado com o retorno da requisição do IPGeolocation.
+
+```delphi
+uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
+
+THorse.Get('ipgeo/gmaps',
+  procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+  const
+    cURLMaps = 'https://maps.google.com/maps?q=%g,%g'; //1º: LATITUDE/2º: LONGITUDE
+  var
+    lHorseGeoLocation: THorseGeoLocation;
+    lFormatSettings: TFormatSettings;
+    lURLMaps: string;
+  begin
+    lFormatSettings:= TFormatSettings.Create('en-US');
+
+    if Req.Sessions.TryGetSession(lHorseGeoLocation) then
+    begin
+      lURLMaps := Format(cURLMaps, [lHorseGeoLocation.Latitude, lHorseGeoLocation.Longitude], lFormatSettings);
+      Res.RedirectTo(lURLMaps);
+    end
+    else
+      Res.Send(Req.RawWebRequest.RemoteAddr);
+  end);
+```
