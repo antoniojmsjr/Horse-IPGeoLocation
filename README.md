@@ -16,7 +16,7 @@ A geolocalização baseada em endereços IP é uma técnica usada para estimar a
 
 ## ⭕ Pré-requisito
 
-Para utilizar o **Horse-IPGeoLocation** é necessário a instalação do framework [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation).
+Para utilizar o **Horse-IPGeoLocation** é necessário a instalação do framework [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest).
 
 * Instalação Automatizada
 
@@ -34,7 +34,7 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 
 Utilizando o [**Boss**](https://github.com/HashLoad/boss) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
 
-*Obs: Se você usa Boss (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
+*Obs: Se você usa Boss (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
 
 ```
 boss install github.com/antoniojmsjr/Horse-IPGeoLocation
