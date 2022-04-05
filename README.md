@@ -80,7 +80,7 @@ function IPGeoLocation(const pProvider: TIPGeoLocationProvider;
 * `pTimeOut`: Tempo em milissegundos para finalização da requisição. [opcional]
 * `pLanguageCode`: Identificação do código de idioma utilizado no retorno do JSON. Ex.: pt-br/en-us. [opcional]
 * `pIPDebug`: IP para debugar.
-  * Para requisições locais a API não é gerado uma requisição usando o middleware IPGeolocation.
+  * Para requisições locais a API, não é gerado uma requisição usando o middleware IPGeolocation.
 
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
