@@ -52,4 +52,15 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ## Uso
 ```delphi
 uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
+
+THorse.Get('ipgeo/json',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
+    var
+      lHorseGeoLocation: THorseGeoLocation;
+    begin
+      if Req.Sessions.TryGetSession(lHorseGeoLocation) then
+        Res.Send(lHorseGeoLocation.ToJSON)
+      else
+        Res.Send(Req.RawWebRequest.RemoteAddr);
+    end);
 ```
