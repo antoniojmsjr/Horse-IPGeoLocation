@@ -49,7 +49,11 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ..\Horse-IPGeoLocation\Source
 ```
 
-## Uso
+## 🧬 Provedores IPGeolocation
+
+Lista dos principais provedores de IPGeolocation homologados: [Visualização](https://github.com/antoniojmsjr/IPGeoLocation#provedores-homologados)
+
+## ⚡️ Uso
 
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
