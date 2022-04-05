@@ -87,7 +87,7 @@ THorse.Get('ipgeo/json',
       Res.Send(Req.RawWebRequest.RemoteAddr);
   end);
 ```
-![image](https://user-images.githubusercontent.com/20980984/161866329-d4789aff-46b8-4f92-ad83-4cd2c9a66fdc.png)
+![image](https://user-images.githubusercontent.com/20980984/161868147-39e9fa2b-0b83-45ac-bbba-4cf0543d0b35.png)
 
 #### Exemplo de visualização do mapa(Google) gerado com o retorno da requisição do IPGeolocation.
 
