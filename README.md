@@ -26,8 +26,6 @@ Para utilizar o **Horse-IPGeoLocation** é necessário a instalação do framewo
 
 Utilizando o [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi) é possível instalar a biblioteca de forma automática.
 
-*Obs: Se você usa [**Boss**](https://github.com/HashLoad/boss/releases/latest) (Dependency manager for Delphi), o [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest) será instalado automaticamente ao instalar **Horse-IPGeoLocation**.*
-
 ```
 boss install github.com/antoniojmsjr/Horse-IPGeoLocation
 ```
