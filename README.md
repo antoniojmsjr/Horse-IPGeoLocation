@@ -53,6 +53,8 @@ Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao 
 ```delphi
 uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
 
+#### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
+
 THorse.Get('ipgeo/json',
   procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc)
   var
