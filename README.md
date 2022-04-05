@@ -150,3 +150,5 @@ THorse.Get('ipgeo/wmaps',
       Res.Send(Req.RawWebRequest.RemoteAddr);
   end);
 ```
+## Licença
+`Horse-IPGeoLocation` is free and open-source software licensed under the [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://github.com/antoniojmsjr/Horse-IPGeoLocation/blob/master/LICENSE)
