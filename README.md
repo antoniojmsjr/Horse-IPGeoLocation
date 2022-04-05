@@ -45,6 +45,8 @@ boss install github.com/antoniojmsjr/Horse-IPGeoLocation
 
 Se você optar por instalar manualmente, basta adicionar as seguintes pastas ao seu projeto, em *Project > Options > Delphi Compiler > Target > All Configurations > Search path*
 
+*Obs: Se você usar a instalação manual, será necessário a instalação do framework [IPGeoLocation](https://github.com/antoniojmsjr/IPGeoLocation/releases/latest).*
+
 ```
 ..\Horse-IPGeoLocation\Source
 ```
