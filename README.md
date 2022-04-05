@@ -78,7 +78,9 @@ function IPGeoLocation(const pProvider: TIPGeoLocationProvider;
 * `pProvider`: Identificação do provedor de IPGeolocation homologado.
 * `pAPIKey`: ApiKey gerado no site do provedor de IPGeolocation identificado no `pProvider`. [opcional]
 * `pTimeOut`: Tempo em milissegundos para finalização da requisição. [opcional]
-* `pLanguageCode`: Identificação da linguagem que será utilizada para retorno do JSON. [opcional]
+* `pLanguageCode`: Identificação do código de idioma utilizado no retorno do JSON. [opcional]
+* `pIPDebug`: IP para debugar.
+  * Para requisições locais a API não é gerado uma requisição usando o middleware IPGeolocation.
 
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
