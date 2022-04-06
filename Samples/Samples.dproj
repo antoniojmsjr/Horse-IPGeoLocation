@@ -56,7 +56,7 @@
         <VerInfo_Locale>1046</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=Antônio José Medeiros Schneider Júnior;FileDescription=$(MSBuildProjectName);FileVersion=1.2022.4.5;InternalName=;LegalCopyright=Antônio José Medeiros Schneider Júnior;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=https://github.com/antoniojmsjr/Horse-IPGeoLocation</VerInfo_Keys>
         <DCC_Define>HORSE_VCL;$(DCC_Define)</DCC_Define>
-        <DCC_UnitSearchPath>..\Source;..\modules\ipgeolocation\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>..\Source;..\modules\ipgeolocation\Source;..\..\..\modules\ipgeolocation\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_MinorVer>2022</VerInfo_MinorVer>
         <VerInfo_Release>4</VerInfo_Release>

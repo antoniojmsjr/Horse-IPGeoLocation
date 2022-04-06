@@ -53,9 +53,9 @@ uses Horse, Horse.IPGeoLocation, Horse.IPGeoLocation.Types;
 
 //PARA TESTAR IPGeolocation LOCALMENTE
 if (DebugHook <> 0) then
-  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, 'APY Key', '8.8.8.8'))
+  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, EmptyStr, '8.8.8.8'))
 else
-  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, 'APY Key'));
+  THorse.Use(IPGeoLocation(TIPGeoLocationProvider.IPInfo, EmptyStr));
 ```
 
 ```delphi
