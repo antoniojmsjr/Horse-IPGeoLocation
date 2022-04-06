@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{74FB7DA7-A1F4-46EC-BD30-5C3A0D88766F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HorseIPGeoLocation.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Samples\Samples.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HorseIPGeoLocation">
+        <MSBuild Projects="HorseIPGeoLocation.dproj"/>
+    </Target>
+    <Target Name="HorseIPGeoLocation:Clean">
+        <MSBuild Projects="HorseIPGeoLocation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HorseIPGeoLocation:Make">
+        <MSBuild Projects="HorseIPGeoLocation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Samples">
+        <MSBuild Projects="Samples\Samples.dproj"/>
+    </Target>
+    <Target Name="Samples:Clean">
+        <MSBuild Projects="Samples\Samples.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Samples:Make">
+        <MSBuild Projects="Samples\Samples.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HorseIPGeoLocation;Samples"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HorseIPGeoLocation:Clean;Samples:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HorseIPGeoLocation:Make;Samples:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

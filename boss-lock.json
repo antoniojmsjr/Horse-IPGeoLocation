@@ -1,0 +1,14 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2022-04-05T01:11:53.1158277-03:00",
+	"installedModules": {
+		"github.com/antoniojmsjr/ipgeolocation": {
+			"name": "ipgeolocation",
+			"version": "v1.5.3",
+			"hash": "d43cb195bfa362e92126e28c0e5128e4",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

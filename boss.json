@@ -1,0 +1,11 @@
+{
+	"name": "Horse-IPGeolocation",
+	"description": "Middleware de geolocalização baseada em endereço IP, desenvolvido parar o framework Horse.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/antoniojmsjr/Horse-IPGeoLocation",
+	"mainsrc": "Source",
+	"projects": [],
+	"dependencies": {
+		"github.com/antoniojmsjr/ipgeolocation": "^v1.5.3"
+	}
+}
