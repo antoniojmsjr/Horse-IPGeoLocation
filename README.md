@@ -69,7 +69,7 @@ function IPGeoLocation(const pProvider: TIPGeoLocationProvider;
 * `pTimeOut`: Tempo em milissegundos para finalização da requisição. [opcional]
 * `pLanguageCode`: Identificação do código de idioma utilizado no retorno do JSON. Ex.: pt-br/en-us. [opcional]
 * `pIPDebug`: IP para testar com requisição local.
-  * Requisições locais ou IP privados ao servidor Horse, não será executado o middleware IPGeolocation, com a exceção da utilização do `pIPDebug`.
+  * Requisições locais ou IP privados ao servidor Horse, não será executado o middleware Horse-IPGeoLocation, com a exceção da utilização do `pIPDebug`.
 
 #### Exemplo de visualização do JSON de retorno da requisição do IPGeolocation.
 
